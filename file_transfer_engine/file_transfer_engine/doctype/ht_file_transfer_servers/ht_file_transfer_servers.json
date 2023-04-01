@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-30 22:18:14.388585",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ht_file_transfer_server_name",
+  "ht_file_transfer_clients",
+  "amended_from",
+  "ht_file_transfer_server_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "ht_file_transfer_clients",
+   "fieldtype": "Link",
+   "label": "HT File Transfer Clients",
+   "options": "HT File Transfer Clients"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HT File Transfer Servers",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ht_file_transfer_server_name",
+   "fieldtype": "Data",
+   "label": "HT File Transfer Server Name"
+  },
+  {
+   "fieldname": "ht_file_transfer_server_id",
+   "fieldtype": "Data",
+   "label": "HT File Transfer Server ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-30 22:18:47.293264",
+ "modified_by": "Administrator",
+ "module": "File Transfer Engine",
+ "name": "HT File Transfer Servers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

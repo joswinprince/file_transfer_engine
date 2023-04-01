@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include file_transfer_engine *.css
+recursive-include file_transfer_engine *.csv
+recursive-include file_transfer_engine *.html
+recursive-include file_transfer_engine *.ico
+recursive-include file_transfer_engine *.js
+recursive-include file_transfer_engine *.json
+recursive-include file_transfer_engine *.md
+recursive-include file_transfer_engine *.png
+recursive-include file_transfer_engine *.py
+recursive-include file_transfer_engine *.svg
+recursive-include file_transfer_engine *.txt
+recursive-exclude file_transfer_engine *.pyc

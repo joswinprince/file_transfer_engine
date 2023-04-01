@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{####}",
+ "creation": "2023-03-09 05:23:40.102591",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "source_system_configuration_tab",
+  "source_transfer_type",
+  "source_hostname_or_ip_address",
+  "source_username",
+  "source_password",
+  "source_port",
+  "source_transfer_mode",
+  "source_file_transfer_type",
+  "source_timeout_duration",
+  "alert_tab",
+  "enable",
+  "source_recipients_mail_list",
+  "destination_recipients_mail_list"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_system_configuration_tab",
+   "fieldtype": "Tab Break",
+   "label": "Source System configuration "
+  },
+  {
+   "default": "FTP",
+   "fieldname": "source_transfer_type",
+   "fieldtype": "Select",
+   "label": "Transfer Type",
+   "options": "FTP\nSFTP\nFTPS\nHTTP\nHTTPS",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "naming_reference.abbr",
+   "fieldname": "source_hostname_or_ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hostname or IP address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_password",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_port",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Port",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_transfer_mode",
+   "fieldtype": "Datetime",
+   "label": "Transfer mode",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_file_transfer_type",
+   "fieldtype": "Data",
+   "label": "File transfer type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "source_timeout_duration",
+   "fieldtype": "Data",
+   "label": "Timeout duration"
+  },
+  {
+   "fieldname": "alert_tab",
+   "fieldtype": "Tab Break",
+   "label": "Alert"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable",
+   "options": "Active\nDeactive"
+  },
+  {
+   "fieldname": "source_recipients_mail_list",
+   "fieldtype": "Long Text",
+   "label": "Source Recipients Mail List"
+  },
+  {
+   "fieldname": "destination_recipients_mail_list",
+   "fieldtype": "Small Text",
+   "label": "Destination Recipients Mail List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-19 23:58:56.682230",
+ "modified_by": "Administrator",
+ "module": "File Transfer Engine",
+ "name": "HT File Transfer Engine configuration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-17 03:50:13.157640",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sno",
+  "file_name",
+  "source_folder",
+  "destination_folder",
+  "transfer_status",
+  "transferred_date_time",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "sno",
+   "fieldtype": "Data",
+   "label": "S.No"
+  },
+  {
+   "fieldname": "file_name",
+   "fieldtype": "Data",
+   "label": "File Name"
+  },
+  {
+   "fieldname": "source_folder",
+   "fieldtype": "Data",
+   "label": "Source Folder"
+  },
+  {
+   "fieldname": "destination_folder",
+   "fieldtype": "Data",
+   "label": "Destination Folder"
+  },
+  {
+   "fieldname": "transfer_status",
+   "fieldtype": "Data",
+   "label": "Transfer Status"
+  },
+  {
+   "fieldname": "transferred_date_time",
+   "fieldtype": "Datetime",
+   "label": "Transferred Date Time"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "HT File Transfer Results",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-20 00:02:52.999059",
+ "modified_by": "Administrator",
+ "module": "File Transfer Engine",
+ "name": "HT File Transfer Results",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
